@@ -1,70 +1,50 @@
-C Banking System Mini Project
-Overview
+# C-Banking-System-MiniProject
+A simple console-based banking system in C that allows users to create accounts, deposit, withdraw, check balance, and close accounts
 
-This project is a simple console-based banking system developed using the C programming language. It allows users to perform basic banking operations through a menu-driven interface. The program manages multiple bank accounts and demonstrates fundamental programming concepts such as structures, arrays, loops, and conditional statements.
+This program allows users to manage bank accounts with basic operations such as:
 
-The system stores account information such as account ID, customer name, account balance, and account status and allows users to interact with these accounts through different operations.
+- Create Account  
+- Deposit Money  
+- Withdraw Money (with insufficient balance check)  
+- Check Account Balance  
+- Close Account  
+- Exit  
 
-Features
+### 🚀 Features
+- Supports **multiple accounts** (up to 100).  
+- Each account has an **ID, Name, Balance, and Status** (active/closed).  
+- Prevents invalid operations (like withdrawing more than the balance).  
+- First-time users must create an account before accessing other options.  
 
-Create a new bank account
+### 🛠️ How to Run
+1. Clone this repository:
+   ```bash
+   git clone https://github.com/yourusername/C-Banking-System.git
+Navigate into the project folder:
 
-Deposit money into an account
+bash
+Copy code
+cd C-Banking-System
+Compile the program:
 
-Withdraw money from an account
+bash
+Copy code
+gcc banking.c -o banking
+Run the program:
 
-Check account balance
+bash
+Copy code
+./banking
+📷 Example Output
+yaml
+Copy code
+No accounts exist. Please create one first.
+1. Create Account
+2. Exit
+Enter choice: 1
+Enter name: Alice
+Account created. ID: 1 | Name: Alice | Balance: 0.00
+📌 Requirements
+GCC Compiler (or any standard C compiler).
 
-Close an account
-
-Menu-driven console interface
-
-Supports up to 100 accounts
-
-Technologies Used
-
-C Programming Language
-
-Standard C Libraries (stdio.h, string.h)
-
-Console / Terminal Interface
-
-Project Structure
-C-Banking-System-MiniProject
-│
-├── Bank.c        # Main program file containing the banking system logic
-└── README.md     # Project documentation
-How to Run the Project
-
-Download or clone the repository
-
-Open the project in any C compiler (GCC, CodeBlocks, Dev-C++, etc.)
-
-Compile the program
-
-Example using GCC:
-
-gcc Bank.c -o bank
-
-Run the program
-
-./bank
-Learning Objectives
-
-This project was created to practice and demonstrate:
-
-Structures in C
-
-Arrays for data storage
-
-Conditional statements
-
-Loops
-
-User input handling
-
-Basic program logic
-
-Author
-
-Sultan Khan
+Works on Linux, macOS, and Windows (with MinGW or similar).
